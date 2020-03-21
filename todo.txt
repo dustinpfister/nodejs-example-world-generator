@@ -1,5 +1,5 @@
 # nodejs-example-world-generator todo list
 
 * (done) gen world map function
-* gen world for Map function option
-* gen map section for cell function option
+* (done) genWorld forMapSecOptions function option
+* (done) genMapSection forCell function option

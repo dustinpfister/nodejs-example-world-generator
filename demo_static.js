@@ -18,6 +18,10 @@ let world = genMap.genWorldMap({
                 secY: secY,
                 val: d * 10 + 5
             };
+            msOpt.forCell = function (cell) {
+                cell.val = msOpt.data.val / (2 * 2);
+                return cell;
+            };
             return msOpt;
         }
     });
