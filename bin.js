@@ -2,14 +2,19 @@
 
 let genMap = require('./lib/genmaps.js');
 
-//let mapSec = genMap.genMapSection();
-
+// variable map section size
 let world = genMap.genWorldMap({
         width: 2,
         height: 2,
-        secWidth: 2,
-        secHeight: 2,
-		forMapSecOptions: function(msOptions){ return msOptions;}
+        forMapSecOptions: function (msOpt) {
+            let secWidth = 1 + msOpt.secIndex;
+            msOpt.secWidth = secWidth;
+            msOpt.secHeight = 2;
+            msOpt.data = {
+                secWidth: secWidth
+            };
+            return msOpt;
+        }
     });
 
 console.log(JSON.stringify(world));
