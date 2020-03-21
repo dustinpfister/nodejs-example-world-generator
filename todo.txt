@@ -3,3 +3,4 @@
 * (done) gen world map function
 * (done) genWorld forMapSecOptions function option
 * (done) genMapSection forCell function option
+* forMapSecOptions should have the world object passed to it
