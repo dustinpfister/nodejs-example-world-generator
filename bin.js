@@ -4,6 +4,11 @@ let genMap = require('./lib/genmaps.js');
 
 //let mapSec = genMap.genMapSection();
 
-let world = genMap.genWorldMap();
+let world = genMap.genWorldMap({
+        width: 2,
+        height: 2,
+        secWidth: 2,
+        secHeight: 2
+    });
 
-console.log(world);
+console.log(JSON.stringify(world));
