@@ -2,7 +2,8 @@
 
 let genMap = require('./lib/genmaps.js');
 
+//let mapSec = genMap.genMapSection();
 
-let mapSec = genMap.genMapSection();
+let world = genMap.genWorldMap();
 
-console.log(mapSec);
+console.log(world);
