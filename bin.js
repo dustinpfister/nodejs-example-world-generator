@@ -1,7 +1,8 @@
 #!/usr/bin/env node
 
-let path = require('path'),
-fs = require('fs'),
-promisify = require('util').promisify,
-read = promisify(fs.readFile),
-write = promisify(fs.writeFile);
+let genMap = require('./lib/genmaps.js');
+
+
+let mapSec = genMap.genMapSection();
+
+console.log(mapSec);
