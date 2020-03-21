@@ -8,7 +8,8 @@ let world = genMap.genWorldMap({
         width: 2,
         height: 2,
         secWidth: 2,
-        secHeight: 2
+        secHeight: 2,
+		forMapSecOptions: function(msOptions){ return msOptions;}
     });
 
 console.log(JSON.stringify(world));
