@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 
-let genMap = require('./lib/genmaps.js');
+let genMap = require('./lib/gen_map.js');
 
 // variable map section size
 let world = genMap.genWorldMap({
